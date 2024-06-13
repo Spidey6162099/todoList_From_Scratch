@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./intervariable-webfont.woff2') format('woff2'),
+      url('./intervariable-webfont.woff') format('woff');
+    
+    font-style: normal;
+  }
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    /* height: 100vh; */
+    padding: 0px;
+    flex-grow: 1;
+    font-family: 'MyFont';
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+button{
+    border-radius: 10px;
+    border-color:#98c1d9;
+    background-color:beige;
+    
+    
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    gap: 15px;
+    background-color: #98c1d9;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: 'MyFont';
+    font-weight: 1000;
+    color: beige;
+    
+    
+}
+
+/* .sidebar>.home,.sidebar>.all,.sidebar>.projects{
+    
+} */
+
+.sidebar>.title{
+    background-color: #1d3557;
+    color: aliceblue;
+    height: 100px;
+}
+
+.mainPage{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    flex-grow: 1;
+    font-family: 'MyFont';
+}
+.header{
+    background-color: #1d3557;
+    height: 100px;
+    color: aliceblue;
+    display: flex;
+    justify-content: start;
+    gap: 40%;
+    align-items: center;
+    padding-left: 20px;
+    font-family: 'MyFont';
+    color: #f48c06;
+}
+
+.header>.title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header>.pagename{
+    /* display: flex;
+    justify-content: center; */
+    font-size: 40px;
+    color: #fcbf49;
+    align-self: center;
+    justify-self: center;
+    font-weight: 1000;
+}
+
+.icon{
+    background-image: url("./icons8-time-100.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+
+.mainPage>.tasks{
+    background-color: aliceblue;
+    flex-grow: 1;
+    padding-left: 50px;
+    font-size: 30px;
+    color: #dc2f02;
+}
+
+.footer{
+   background-color: #1d3557;
+   height: 30px; 
+}
+
+
+.tasks>.todoList{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.tasks>.todoList>li>button{
+    background-color: none;
+    border: none;
+}
+.tasks>.todoList>li{
+    border: #ffd7ba solid 5px;
+    flex-grow: 1;
+    color: #d00000;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 15px;
+    width: 90%;
+    
+}
+
+.tasks>.todoList>li>div{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
